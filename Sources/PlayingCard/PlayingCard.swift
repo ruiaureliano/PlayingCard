@@ -1,10 +1,12 @@
 import Foundation
 
-public struct PlayingCard {
-    let rank: Rank
-    let suit: Suit
+class PlayingCard: NSObject {
+
+    var rank: Rank?
+    var suit: Suit?
 
     init(rank: Rank, suit: Suit) {
+        super.init()
         self.rank = rank
         self.suit = suit
     }
