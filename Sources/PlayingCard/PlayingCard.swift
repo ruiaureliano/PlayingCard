@@ -1,11 +1,11 @@
 import Foundation
 
-public struct PlayingCard {
-    public let rank: Rank
-    public let suit: Suit
+open class PlayingCard: NSObject {
 
-    public init(rank: Rank, suit: Suit) {
-        self.rank = rank
-        self.suit = suit
+    public static var rank: Rank = .jack
+    public static var suit: Suit = .diamonds
+
+    open class func log(_ message: Any) {
+        Swift.print(log as AnyObject)
     }
 }
