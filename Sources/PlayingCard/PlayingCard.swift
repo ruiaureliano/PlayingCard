@@ -1,6 +1,6 @@
 import Foundation
 
-class PlayingCard: NSObject {
+public class PlayingCard: NSObject {
 
     var rank: Rank?
     var suit: Suit?
